@@ -1,0 +1,17 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  meal_time: 2021-02-01 18:23:35
+  calories: 1.5
+  fat: 1
+  carbs: 1
+  protein: 1
+  name: MyString
+
+two:
+  meal_time: 2021-02-01 18:23:35
+  calories: 1.5
+  fat: 1
+  carbs: 1
+  protein: 1
+  name: MyString
