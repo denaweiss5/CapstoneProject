@@ -17,6 +17,8 @@ gidon = User.create(email: "gidon1996@yahoo.com", name: "gidon", password: "gido
 
 exercise1 = ExerciseEntry.create(category: "run", duration: 55.0, calories_burned: 325.2, user_id: dena.id)
 exercise2 = ExerciseEntry.create(category: "walk", duration: 95.0, calories_burned: 125.5, user_id: gidon.id)
+exercise3 = ExerciseEntry.create(category: "yoga", duration: 30.0, calories_burned: 100.0, user_id: dena.id)
+
 
 meal1 = MealEntry.create(meal_time: "breakfast",  calories: 325.1, fat: 30, carbs: 2, protein: 20, name: "spaghetti squash", user_id: dena.id)
 meale = MealEntry.create(meal_time: "dinner",  calories: 125.1, fat: 3, carbs: 22, protein: 11, name: "cookies", user_id: gidon.id)
