@@ -28,6 +28,7 @@ ActiveRecord::Schema.define(version: 2021_02_02_002435) do
     t.integer "carbs"
     t.integer "protein"
     t.string "name"
+    t.date "date"
     t.integer "user_id"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false

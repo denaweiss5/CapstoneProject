@@ -7,6 +7,7 @@ class CreateMealEntries < ActiveRecord::Migration[6.0]
       t.integer :carbs
       t.integer :protein
       t.string :name
+      t.date :date
       t.integer :user_id
 
       t.timestamps
