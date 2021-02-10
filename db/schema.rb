@@ -14,6 +14,7 @@ ActiveRecord::Schema.define(version: 2021_02_02_002435) do
 
   create_table "exercise_entries", force: :cascade do |t|
     t.string "category"
+    t.date "date"
     t.float "duration"
     t.float "calories_burned"
     t.integer "user_id"
