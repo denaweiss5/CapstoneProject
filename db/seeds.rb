@@ -21,8 +21,10 @@ exercise3 = ExerciseEntry.create(category: "yoga", duration: 30.0, date: 2021110
 
 
 meal1 = MealEntry.create(meal_time: "breakfast",  date: 20211101, calories: 325.1, fat: 30, carbs: 2, protein: 20, name: "spaghetti squash", user_id: dena.id)
-meale = MealEntry.create(meal_time: "dinner", date: 20211101, calories: 125.1, fat: 3, carbs: 22, protein: 11, name: "cookies", user_id: gidon.id)
+meal2 = MealEntry.create(meal_time: "dinner", date: 20211101, calories: 125.1, fat: 3, carbs: 22, protein: 11, name: "cookies", user_id: gidon.id)
+meal3 = MealEntry.create(meal_time: "dinner", date: 20211101, calories: 125.1, fat: 3, carbs: 22, protein: 11, name: "cookies", user_id: dena.id)
+
 
 weight1 = WeightEntry.create(weight: 154.6, date:20211101, user_id: dena.id)
 weight2 = WeightEntry.create(weight: 162.0, date:20211110, user_id: gidon.id)
-weight3 = WeightEntry.create(weight: 142.0, date:20210107, user_id: dena.id)
+weight3 = WeightEntry.create(weight: 142.0, date:20211101, user_id: dena.id)

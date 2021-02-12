@@ -43,6 +43,6 @@ class MealEntriesController < ApplicationController
     private 
 
     def meal_entry_params
-        params.require(:meal_entry).permit(:meal_time, :calories, :fat, :carbs, :protein, :name, :user_id)
+        params.require(:meal_entry).permit(:meal_time, :date, :calories, :fat, :carbs, :protein, :name, :user_id)
     end
 end
