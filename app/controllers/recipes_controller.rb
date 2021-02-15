@@ -2,6 +2,16 @@ class RecipesController < ApplicationController
   protect_from_forgery unless: -> { request.format.json? }
  
 
+
+  def index
+    recipes = Recipe.all
+    render json: recipes, except: [:created_at, :updated_at]
+end
+
+  def show
+    recipe = Recipe.find_by_id(params[:id])
+    render json: recipe
+end
   def create
     recipe = Recipe.new(recipe_params)
 
@@ -12,7 +22,7 @@ class RecipesController < ApplicationController
         render json: { error: recipe.errors.full_messages}
       end
     end
-  end
+
 
 
   def destroy
@@ -25,9 +35,7 @@ class RecipesController < ApplicationController
   end
 
   private
-  
-
     def recipe_params
-      params.require(:recipe).permit(:user_id, :name, :calories, :carbs, :fat, :protein, :instructions, :ingredients)
+      params.require(:recipe).permit(:user_id, :name, :calories, :carbs, :fat, :protein, :directions, :ingredients, :image)
     end
 end
