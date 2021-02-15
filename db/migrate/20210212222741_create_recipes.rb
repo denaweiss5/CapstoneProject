@@ -10,6 +10,7 @@ class CreateRecipes < ActiveRecord::Migration[6.0]
       t.text :directions
       t.text :ingredients
       t.string :image
+      t.integer :recipe_id
 
       t.timestamps
     end
