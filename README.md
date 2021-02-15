@@ -1,24 +1,27 @@
 # README
-For the backend: https://github.com/denaweiss5/HealthyHabitsFrontend
-This README would normally document whatever steps are necessary to get the
-application up and running.
+For the frontend repository please visit this link: https://github.com/denaweiss5/HealthyHabitsFrontend
 
-Things you may want to cover:
 
-* Ruby version
 
-* System dependencies
+Healthy Habits is a platform for users to keep track of their own health progress and journey! Users can easily log weight entries, meal entries and exercise entries. To make healthy habits attainable for our users, there is a recipe section giving users access to thousands of recipes that they can save for later!
 
-* Configuration
+In this application, a user will be able to:
 
-* Database creation
+Log in, Log out, or create an account with an email
+Add new weight, meal, and activity entries
+Delete weight, meal, and activity entries
+Find recipes to cook from our recipes page based on healthy categories
+Search for any recipe from our search bar
+Add a meal entry from a recipe page
+Save a recipe to their favorites for later
+Delete a favorite recipe
+Edit account info
 
-* Database initialization
 
-* How to run the test suite
+Setup: 
+1. Clone this repo to your local machine. 2. Run 'bundle install' in your terminal. 3. Run 'rake db:migrate' in your terminal. 4. Run 'rails s' in your terminal.
+2. Clone the frontend repo to your local machine. 2. Run 'npm install' in your terminal. 3. Run 'PORT=4000 npm start' in your terminal.
 
-* Services (job queues, cache servers, search engines, etc.)
 
-* Deployment instructions
 
-* ...
+Developer: Dena Weiss Neuman
