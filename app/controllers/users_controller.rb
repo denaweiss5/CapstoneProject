@@ -23,8 +23,11 @@ class UsersController < ApplicationController
     end
     
     def update
-        user = User.find_by_id(params[:id])
-        if user.update(user_params)
+        user = User.find(params[:id])
+
+        if user && user.authenticate(params[:password])
+        user.update(user_params)
+
             render json: user
         else 
             render json: {error: user.errors.full_messages}
@@ -43,7 +46,7 @@ class UsersController < ApplicationController
     private 
 
     def user_params
-        params.require(:user).permit(:email, :name)
+        params.require(:user).permit(:email, :name, :password)
     end
 
  
